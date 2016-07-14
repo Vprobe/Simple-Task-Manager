@@ -1,0 +1,289 @@
+html,
+body {
+    height: 100%;
+}
+
+.wrap {
+    min-height: 100%;
+    height: auto;
+    margin: 0 auto -60px;
+    padding: 0 0 60px;
+}
+
+.wrap > .container {
+    padding: 5px 15px 20px;
+}
+
+.footer {
+    height: 60px;
+    background-color: #f5f5f5;
+    border-top: 1px solid #ddd;
+    padding-top: 20px;
+}
+
+.jumbotron {
+    text-align: center;
+    background-color: transparent;
+}
+
+.jumbotron .btn {
+    font-size: 21px;
+    padding: 14px 24px;
+}
+
+.not-set {
+    color: #c55;
+    font-style: italic;
+}
+
+/* add sorting icons to gridview sort links */
+a.asc:after, a.desc:after {
+    position: relative;
+    top: 1px;
+    display: inline-block;
+    font-family: 'Glyphicons Halflings';
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1;
+    padding-left: 5px;
+}
+
+a.asc:after {
+    content: "\e151";
+}
+
+a.desc:after {
+    content: "\e152";
+}
+
+.sort-numerical a.asc:after {
+    content: "\e153";
+}
+
+.sort-numerical a.desc:after {
+    content: "\e154";
+}
+
+.sort-ordinal a.asc:after {
+    content: "\e155";
+}
+
+.sort-ordinal a.desc:after {
+    content: "\e156";
+}
+
+.grid-view td {
+    white-space: nowrap;
+}
+
+.grid-view .filters input,
+.grid-view .filters select {
+    min-width: 50px;
+}
+
+.hint-block {
+    display: block;
+    margin-top: 5px;
+    color: #999;
+}
+
+.error-summary {
+    color: #a94442;
+    background: #fdf7f7;
+    border-left: 3px solid #eed3d7;
+    padding: 10px 20px;
+    margin: 0 0 15px 0;
+}
+
+/* align the logout "link" (button in form) of the navbar */
+.nav > li > form {
+    padding: 8px;
+}
+
+.nav > li > form > button:hover {
+    text-decoration: none;
+}
+
+.container {
+    width: 1400px;
+}
+
+.site-index {
+    margin-bottom: 5px;
+}
+
+.task-row-header {
+    margin: 1px;
+    margin-bottom: 10px
+}
+
+.task-row {
+    border: 1px solid #ccc;
+}
+
+.task-row-padding {
+    padding: 0 5px 0 0;
+}
+
+.task-font {
+    font-size: 11px;
+}
+
+.have-desc {
+    border-right: 6px solid #ccc;
+}
+
+.bg-task-done {
+    background-color: #c8f2d5 ;
+}
+
+.bg-fresh-comment {
+    background-color: #f2eeba;
+}
+
+.project-title {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 8px;
+    width: 25%;
+    display: inline-block;
+    text-align: left;
+    float: left;
+}
+
+.task-title {
+    display: inline-block;
+    width: 65%;
+}
+
+.left-column {
+    width: 25%;
+    display: inline-block;
+    float: left;
+    text-align: left;
+    padding: 10px 0 10px 8px;
+}
+
+.right-column {
+    width: 75%;
+    float: left
+}
+
+.task-title a {
+    display: block;
+    text-decoration: none;
+    color: #333;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.task-buttons {
+    float: right;
+    width: 10%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.task-buttons a {
+    text-decoration: none;
+    padding: 0 1px;
+    cursor: pointer;
+}
+
+.priority-level1 {
+    border-color: #cc7d7f;
+}
+
+.priority-level2 {
+    border-color: #cc888b;
+}
+
+.priority-level4 {
+    border-color: #9eadcc;
+}
+
+@keyframes blink {
+    50% {
+        border-color: #ccc;
+    }
+}
+
+.blink {
+    -webkit-animation-name: blink;
+    -moz-animation-name: blink;
+    -o-animation-name: blink;
+    animation-name: blink;
+
+    -webkit-animation-duration: 2s;
+    -moz-animation-duration: 2s;
+    -o-animation-duration: 2s;
+    animation-duration: 2s;
+
+    -webkit-animation-iteration-count: infinite;
+    -moz-animation-iteration-count: infinite;
+    -o-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+}
+
+.task-desc {
+    padding: 10px 8px 10px 2px;
+    text-align: justify;
+}
+
+.title-counter {
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    display: inline;
+    float: right;
+    padding: 0 3px;
+}
+
+.task-comments {
+    text-align: left;
+    padding: 5px 8px 8px;
+}
+
+.task-comment {
+    padding: 4px 0;
+}
+
+.filter-by-user {
+    position: absolute;
+    right: 15px;
+    z-index: 1;
+}
+
+/*alert notice*/
+.alert {
+    border-radius: 0;
+    margin-bottom: 6px;
+    padding: 3px 8px 2px;
+    text-align: center;
+    display: inline-block;
+}
+
+.close {
+    line-height: 0.8;
+    margin: 0 3px 0 10px;
+}
+
+/*yii2-redactor*/
+.warning-cnt {
+    color: red;
+}
+
+.redactor-toolbar {
+    background: #ccc;
+    box-shadow: none;
+}
+.redactor-toolbar li a {
+    color: #333;
+}
+.redactor-toolbar li a:hover {
+    background: #898989;
+    color: #333;
+}
+
+.redactor-toolbar-tooltip{
+    display: none !important;
+}
